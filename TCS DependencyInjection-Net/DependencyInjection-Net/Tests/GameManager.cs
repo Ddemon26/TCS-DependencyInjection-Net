@@ -1,3 +1,4 @@
+using TCS.DependencyInjection.Net;
 using UnityEngine;
 namespace TCS.DependencyInjection.Tests {
     [DefaultExecutionOrder(-1000)]

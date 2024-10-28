@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 using UnityEngine;
-namespace TCS.DependencyInjection {
+namespace TCS.DependencyInjection.Net {
     public static class ServiceProviderExtensions {
         public static void InjectServiceAttributes(this IServiceProvider serviceProvider, object target) {
             var type = target.GetType();
@@ -39,7 +39,7 @@ namespace TCS.DependencyInjection {
             Func<T, bool> isWritable) where T : MemberInfo {
 
             foreach (var member in members) {
-                if (Attribute.GetCustomAttribute(member, typeof(ServiceAttribute)) is not ServiceAttribute)
+                if (System.Attribute.GetCustomAttribute(member, typeof(ServiceAttribute)) is not ServiceAttribute)
                     continue;
 
                 var serviceType = getTypeFunc(member);

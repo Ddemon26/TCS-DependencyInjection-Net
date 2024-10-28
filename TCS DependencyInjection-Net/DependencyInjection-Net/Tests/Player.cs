@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using TCS.DependencyInjection.Net;
+using UnityEngine;
 namespace TCS.DependencyInjection.Tests {
-    public class Player : MonoBehaviour, IDependencyInjectionListener
+    public class SomePlayer : MonoBehaviour, IDependencyInjectionListener
     {
         [Service] // This will automatically inject the weapon service
         public IWeapon Weapon { get; set; }
