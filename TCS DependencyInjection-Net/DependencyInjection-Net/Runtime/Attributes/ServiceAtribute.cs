@@ -1,6 +1,6 @@
 using System;
 
-namespace TCS.DependencyInjection {
+namespace TCS.DependencyInjection.Net {
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
-    public class ServiceAttribute : Attribute { }
+    public class ServiceAttribute : System.Attribute { }
 }
