@@ -5,7 +5,7 @@ namespace TCS.DependencyInjection.Tests {
     public class GameManager : MonoBehaviour {
         ServiceProvider m_serviceProvider;
 
-        void Awake() // Changed Start to Awake for earlier execution
+        void Awake() // Changed Setup to Awake for earlier execution
         {
             // Create a new service collection
             IServiceCollection services = new ServiceCollection();
